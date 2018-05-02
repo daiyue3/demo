@@ -1,0 +1,113 @@
+ul,ol,li{
+  list-style: none;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  overflow: hidden;
+  min-height: 100%;
+  height: 255px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.select-content{
+  position: relative;
+  float: left;
+  line-height: 32px;
+  width: 100%;
+  height: 255px;
+}
+
+.select-content .btn-box{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  height: 30px;
+  width: 200px;
+  padding: 0 10px;
+  margin-right: 20px;
+  border: 1px solid #ddd;
+  color: #999;
+  border-radius: 4px;
+}
+
+ .btn-box .arrow{
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  display: block;
+  border: 8px solid #aaa;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.btn-box.active{
+  border-color: #2d8ff7;
+}
+.btn-box.active .arrow{
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  display: block;
+  border: 8px solid #aaa;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid transparent;
+}
+.model-selects{
+  position: absolute;
+  left: 0;
+  top: 42px;
+  height: 212px;
+  
+}
+
+.model-select{
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  width: auto;
+  height: 200px;
+  margin-right: 10px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow:0 0 4px 1px #ddd;
+}
+.model-select .select-item{
+  position: relative;
+  cursor: pointer;
+  padding: 0 8px;
+  color: #666
+}
+.select-item .arrow{
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  display: block;
+  border: 6px solid #aaa;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-top: 6px solid transparent;
+}
+.select-item:hover{
+  background-color:#eee;
+}
+
+.select-item.active{
+  background-color: #2d8ff7;
+  color: #fff;
+}
+
+.select-item.active .arrow{
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  display: block;
+  border: 6px solid #fff;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-top: 6px solid transparent;
+}
